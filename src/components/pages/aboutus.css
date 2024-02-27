@@ -1,0 +1,118 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.about-container {
+  display: flex
+}
+
+.about-section {
+  background-color: #fff;
+  padding: 4rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-section h1 {
+  color: #000;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.about-section p {
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-section a {
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.team-item {
+  background: #f4f5f6;
+  text-align: center;
+  margin: 50px 20px 20px 20px;
+  padding: 20px 50px 40px 20px;
+  border-radius: 8px 8px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.team-item:hover {
+  background: #8fbbc9;
+  color:#fff
+}
+
+.team-item h3 {
+  margin: 20px 0 1px 0 !important;
+  color: #454545;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.about-title {
+  white-space: pre-line;
+}
+
+.team-item:hover h3 {
+  color: #ddd;
+}
+
+.team-img {
+  max-width: 140px;
+  padding: 6px 6px;
+  background-color: #dedede;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.team-info {
+  display: block;
+  margin-bottom: 0;
+}
+
+.team-info h4 {
+  color: #605f5f;
+  font-style: italic;
+  font-size: 20px;
+  margin: 10px 10px;
+}
+
+.team-info p {
+  color: #605f5f;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.team-info::after {
+  background: #8fbbc9
+}
+
+ul.team-icon {
+  margin-top: 25px;
+}
+
+ul.team-icon li {
+  display: inline-block;
+  margin: 0 3px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
