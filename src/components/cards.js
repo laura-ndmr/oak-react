@@ -15,13 +15,13 @@ function Cards() {
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <div className='cards__item'>
-          <div class="maincontainer">
+          <div className="maincontainer">
 
-            <div class="thecard">
+            <div className="thecard">
 
-              <div class="thefront"><h1>Web Development</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
+              <div className="thefront"><h1>Web Development</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
 
-              <div class="theback"><h1>Back of Card</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p>
+              <div className="theback"><h1>Back of Card</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p>
             <button>Submit</button></div>
 
           </div>
@@ -32,10 +32,10 @@ function Cards() {
           </div>
 
           <div className='cards__item'>
-          <div class="maincontainer">
-            <div class="thecard">
-              <div class="thefront"><h1>CRM</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
-              <div class="theback"><h1>Back of Card</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p>
+          <div className="maincontainer">
+            <div className="thecard">
+              <div className="thefront"><h1>CRM</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
+              <div className="theback"><h1>Back of Card</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p>
             <button>Submit</button></div>
           </div>
           </div>
@@ -45,10 +45,10 @@ function Cards() {
           </div>
 
           <div className='cards__item'>
-          <div class="maincontainer">
-            <div class="thecard">
-              <div class="thefront"><h1>Digital Marketing</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
-              <div class="theback"><h1>Back of Card</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p>
+          <div className="maincontainer">
+            <div className="thecard">
+              <div className="thefront"><h1>Digital Marketing</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
+              <div className="theback"><h1>Back of Card</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p>
             <button>Submit</button></div>
           </div>
           </div>

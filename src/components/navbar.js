@@ -1,29 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
 import { Button } from './button';
+import Dropdown from './dropdown';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  const [dropdown, setDropdown] = useState(true);
+
+  const [button] = useState(true);
 
   const handleClick = () => setClick(!click);
-
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
     } else {
-      setButton(true);
+      setDropdown(true);
     }
   };
 
-  useEffect(() => {
-    showButton();
-  }, []);
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
 
-  window.addEventListener('resize', showButton);
 
   return (
     <>
@@ -41,18 +46,19 @@ function Navbar() {
                 About Us
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to ="/services" className="nav-links" onClick={closeMobileMenu}>
-                Services
-              </Link>
+            <li className="nav-item"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}>
+              <Link to="/services" className="nav-links" onClick={closeMobileMenu}>Services <i className="fas fa-caret-down"></i></Link>
+              <Dropdown />
             </li>
             <li className="nav-item">
               <Link to ="/contact" className="nav-links-mobile" onClick={closeMobileMenu}>
                 Contact
               </Link>
+              {button && <Button buttonStyle='btn--outline'>Contact</Button>}
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Contact</Button>}
         </div>
       </nav>
 

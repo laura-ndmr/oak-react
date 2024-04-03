@@ -13,9 +13,7 @@
 
 .cards__wrapper {
   position: relative;
-  margin: 100px 0 250px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -199,14 +197,11 @@
 
 /* THE MAINCONTAINER HOLDS EVERYTHING */
 .maincontainer{
-  position: absolute;
   width: 250px;
   height: 320px;
   background: none;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-
 }
 
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
