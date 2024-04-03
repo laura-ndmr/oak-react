@@ -6,7 +6,7 @@ import Dropdown from './dropdown';
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(true);
+  const [dropdown, setDropdown] = useState(false);
 
   const [button] = useState(true);
 
@@ -49,8 +49,8 @@ function Navbar() {
             <li className="nav-item"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}>
-              <Link to="/services" className="nav-links" onClick={closeMobileMenu}>Services <i className="fas fa-caret-down"></i></Link>
-              <Dropdown />
+              <Link to="/services" className="nav-links" onClick={closeMobileMenu}>Services <i className="fas fa-caret-down" /></Link>
+              {dropdown && <Dropdown />}
             </li>
             <li className="nav-item">
               <Link to ="/contact" className="nav-links-mobile" onClick={closeMobileMenu}>

@@ -5,7 +5,7 @@ import './App.css';
 import Home from './components/pages/home.js';
 import AboutUs from './components/pages/aboutus.js';
 import Services from './components/pages/services.js';
-import Services1 from './components/pages/service1.js';
+import Service1 from './components/pages/service1.js';
 import Contact from './components/pages/contact.js';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
           <Route path='/' element={<Home />}/>
           <Route path='/aboutus' element={<AboutUs />}/>
           <Route path='/services' element={<Services />}/>
-          <Route path='/service1' element={<Services1 />}/>
+          <Route path='/service1' element={<Service1 />}/>
           <Route path='/contact' element={<Contact />}/>
         </Routes>
       </Router>

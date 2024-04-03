@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
 import './services.css';
-import './service1.js';
 
 export default function Services() {
 
