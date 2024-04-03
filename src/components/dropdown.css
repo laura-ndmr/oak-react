@@ -1,13 +1,14 @@
 .dropdown-menu {
-  background: red;
   width: 200px;
-  position: absolute;
+  position: relative;
   top: 80px;
   list-style: none;
-  text-align: start;
+  text-align: center;
+  display: flex;
 }
 
 .dropdown-menu li {
+  width: 200px;
   background: #1888ff;
   cursor: pointer;
 }
